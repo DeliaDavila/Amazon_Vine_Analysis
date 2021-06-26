@@ -6,7 +6,7 @@ In this project, I conducted analysis for SellBy of Amazon reviews written by me
 Review a sample dataset of reviews from Amazon and analyze reviews, comparing favorable reviews against totals for both paid Vine reviews and normal unpaid reviews.
 
 ### Process
-To condult the analysis, I pulled data from a sample set of kitchen product reviews from Amazon's S3 service using Pyspark's spark method:
+To conduct the analysis, I pulled data from a sample set of kitchen product reviews from Amazon's S3 service using Pyspark's spark method:
 
 
 ```
@@ -30,7 +30,6 @@ filtered_votes_df = vine_df.filter("total_votes>20")
 helpful_calc_df = filtered_votes_df.filter(("helpful_votes/total_votes >= .5"))
 
 ```
-
 From this cleaner dataset, I calculated five-star reviews versus total reviews for both paid and unpaid votes, as shown in the Results section.
 
 ## Results
